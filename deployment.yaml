@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
        - name: frontend-app
-         image: frontend
+         image: 440422120931.dkr.ecr.ap-south-1.amazonaws.com/ecommerce-frontend:latest
          ports:
           - containerPort: 80
          envFrom:
