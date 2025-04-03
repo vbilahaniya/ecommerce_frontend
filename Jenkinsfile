@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         AWS_REGION = "ap-south-1"
-        ECR_REPO = "440422120931.dkr.ecr.ap-south-1.amazonaws.com/ecommerce_frontend"
+        ECR_REPO = "440422120931.dkr.ecr.ap-south-1.amazonaws.com/ecommerce-frontend"
         IMAGE_TAG = "latest"
         KUBECONFIG = "/root/.kube/config"
     }
@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'master', url: 'https://github.com/your-repo/ecommerce-frontend.git'
+                git branch: 'master', url: 'https://github.com/vbilahaniya/ecommerce_frontend.git'
             }
         }
 
